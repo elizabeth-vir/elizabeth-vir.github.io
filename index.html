@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>6 полезных привычек</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Playfair+Display');
+		body{
+			text-align: justify;
+			margin: 5px auto;
+			padding: 5px;
+			font-size: 14px;
+		}
+		.hed1{
+			height: 110px;
+			padding: 5px;
+			margin: 5px;
+			background-color: #F1FAEE;
+			text-align: center;
+		}
+		footer{
+			text-align: center;
+			padding: 5px;
+			margin: 5px;
+		}
+		section{
+			margin: 10px;
+			padding: 5px;
+		}
+		article{
+			margin-top: 20px;
+		}
+		h1{
+			font-family: 'Playfair Display', serif;
+		}
+		h2{
+			text-align: center;
+			font-family: 'Playfair Display', serif;
+		}
+		h3{
+			font-family: 'Playfair Display', serif;
+			transition: 5s;
+		}
+		p{
+			font-family: 'Fira Sans', sans-serif;
+		}
+		li{
+			list-style: square;
+		}
+		nav{
+			position: fixed;
+			top: 0;
+			left: -275px;
+			width: 275px;
+			height: 100vh;
+			transition: .5s;
+			background: inherit;
+		}
+		.vis{
+			left: 0;
+		}
+		.button{
+			position: absolute;
+			top: 22.5px;
+			right: -35px;
+			width: 20px;
+			height: 20px;
+		}
+		a{
+			line-height: 26px;
+			text-decoration: none;
+			font-family: 'Fira Sans', sans-serif;
+			font-size: 16px;
+			font-weight: 600;
+		}
+		hr{
+			width: 250px;
+		}
+		div{
+			text-align: center;
+			margin: 5px;
+		}
+		img{
+				width: 250px;
+				height: 150px;
+		}
+		span{
+			visibility: hidden;
+		}
+
+		@media (min-width: 768px){
+			body{
+				padding: 10px;
+		   		font-size: 15px;
+			}
+			.hed1{
+	  			height: 150px;
+	  		}
+	  		section{
+				text-align: center;
+	  		}
+	  		h3:hover{
+	  			text-decoration: line-through;
+	  		}
+	  		nav{
+	  			position: relative;
+	  			left: 0px;
+	  			top: 0;
+	  			height: 24px;
+	  			width: 600px;
+	  			margin: auto;
+	  		}
+	  		.button{
+	  			visibility: hidden;
+	  		}
+	  		li{
+	  			list-style: none;
+	  			display: inline-block;
+			}
+			a{
+				line-height: normal;
+				font-family: 'Fira Sans', sans-serif;
+				font-weight: normal;
+				font-size: 18px;
+			}
+			article{
+				margin: 5px 40px;
+				padding: 10px;
+				width: 35%;
+				display: inline-block;
+				vertical-align: top;
+			}
+			hr{
+				width: 500px;
+			}
+			img{
+				width: 270px;
+				height: 175px;
+			}
+			span{
+				visibility: visible;
+			}
+		}
+
+		@media (min-width: 1024px) {
+	  		body{
+		   		padding: 20px;
+		   		font-size: 16px;
+	  		}
+	  		.hed1{
+	  			height: 175px;
+	  		}
+	  		section{
+				text-align: center;
+	  		}
+	  		h3:hover{
+	  			text-decoration: line-through;
+	  		}
+	  		nav{
+	  			position: relative;
+	  			left: 0px;
+	  			top: 0;
+	  			height: 24px;
+	  			width: 800px;
+	  			margin: auto;
+	  		}
+	  		.button{
+	  			visibility: hidden;
+	  		}
+	  		li{
+	  			list-style: none;
+	  			display: inline-block;
+			}
+			a{
+				line-height: normal;
+				font-family: 'Fira Sans', sans-serif;
+				font-weight: normal;
+				font-size: 20px;
+			}
+			article{
+				margin: 5px 10px;
+				padding: 20px;
+				width: 38%;
+				display: inline-block;
+				vertical-align: top;
+			}
+			hr{
+				width: 800px;
+			}
+			img{
+				width: 325px;
+				height: 200px;
+			}
+			span{
+				visibility: visible;
+			}
+		}
+
+
+		/*@media (min-width: 1366px) {
+	  		body{
+		   		padding: 40px;
+		   		font-size: 17px;
+	  		}
+	  		.hed1{
+	  			height: 200px;
+	  		}
+	  		section{
+				text-align: center;
+	  		}
+	  		h3:hover{
+	  			text-decoration: line-through;
+	  		}
+	  		nav{
+	  			position: relative;
+	  			left: 0;
+	  			top: 0;
+	  			height: 24px;
+	  			width: 800px;
+	  			margin: auto;
+	  		}
+	  		.button{
+	  			visibility: hidden;
+	  		}
+	  		li{
+	  			list-style: none;
+	  			display: inline-block;
+			}
+			a{
+				line-height: normal;
+				font-family: 'Fira Sans', sans-serif;
+				font-weight: normal;
+				font-size: 22px;
+			}
+			article{
+				padding: 20px;
+				width: 46%;
+				display: inline-block;
+				vertical-align: top;
+			}
+			hr{ 
+				width: 1000px;
+			}
+			img{
+				width: 375px;
+				height: 250px
+			}
+			span{
+				visibility: visible;
+			}
+		}*/
+	</style>
+</head>
+<body link="black" vlink="gray">
+	<header class="hed1">
+		<h1>6 полезных привычек</h1>
+		<nav id="menu">
+			<ul>
+				<li><a href="#sec_1">Боремся с ленью</a></li>
+					<span>|</span>
+				<li><a href="#sec_2">На пути к счастью</a></li>
+					<span>|</span>
+				<li><a href="#sec_3">Успеваем все и везде</a></li>
+			</ul>
+			<img class="button" src="https://www.atutorspaces.com/images/toggle.png" alt="" id="hide">
+		</nav>
+	</header>
+
+
+	<main>
+		<hr align="center" color="#C2C7C8">
+		<section id="sec_1">
+			<header><h2>Боремся с ленью</h2></header>
+			<article>
+				<h3>Уберись в команте</h3>
+				<p>
+					Особое внимание при этом удели рабочей зоне. Если на твоем столе будет порядок, тебе будет приятнее за него садиться и что-то делать. Создай атмосферу, которая будет отражать тебя, и наполни ей каждый уголок своей комнаты. Собери мудборд, развесь фотографии красивых мест и обклей все зайчиками или енотиками – они будут поднимать тебе настроение, даже если ты будешь заниматься органической химией или тригонометрией. Хотя, некоторые психологи утверждают, что отдельным личностям комфортнее работать в творческом беспорядке. Так что выбери тот вариант, который подходит именно тебе: «все разложено по полочкам» или «все черт знает где, но тебе это нравится».
+				</p>
+				<div>
+					<img src="https://media.giphy.com/media/pWv5zAaHdX5QY/giphy.gif" alt="">
+				</div>
+			</article>
+			<article>
+				<h3>Снизь уровень перфекционизма</h3>
+				<p>
+					Нам часто лень начинать что-то просто потому, что мы боимся не справиться. «У меня все равно ничего не получится, даже начинать не буду», – поверь, эта фраза приходит в голову не только тебе. Но вся идея в том, что надо быть чуть менее требовательной к себе. Идеального момента и условий ждать бесполезно, так не бывает. Надо просто начать, а что получится, то получится. Будешь постепенно все исправлять и улучшать, и мы уверены, что у тебя выйдет действительно что-то стоящее.
+				</p>
+				<div>
+					<img src="https://media.giphy.com/media/6U44QEtLTQkz6/giphy.gif" alt="">
+				</div>
+			</article>
+		</section>
+
+
+		<section id="sec_2">
+			<header><h2>На пути к счастью</h2></header>
+			<article>
+				<h3>Твори добро</h3>
+				<p>
+					Даже несмотря на то, что в сутках всего 24 часа, позитивные люди тратят часть этого времени на то, чтобы творить добро, которое непременно вернется, и принесет что-то хорошее. Волонтерская работа или просто бескорыстные добрые поступки положительно влияют на душевное здоровье. Кстати, психологам известно такое понятие, как «кайф помогающего». Почему кайф? Потому что добрые дела вырабатывают гормон удовольствия – дофамин. А еще у добрых людей гораздо реже портится настроение.
+				</p>
+				<div>
+					<img src="https://media.giphy.com/media/lXiRKBj0SAA0EWvbG/giphy.gif" alt="">
+				</div>
+			</article>
+			<article>
+				<h3>Будь оптимисткой</h3>
+				<p>
+					Оптимизм – младший брат счастья. А еще оптимизм отлично влияет на здоровье. Чем меньше стрессов, тем меньше головной боли и сердечно-сосудистых заболеваний. Если ты всегда стараешься быть в хорошем настроении, значит ты выбираешь здоровье и счастье! Кстати психологи привели отличную характеристику оптимистов и пессимистов: «Определяющая характеристика пессимистов в том, что они верят, что плохое будет длиться долго, разрушит все, чего они добились, и что все это по их собственной вине. Оптимисты же верят, что поражение – это временно, что это не их вина: обстоятельства, невезение или другие люди. Таких людей неприятности не тревожат – они воспринимают их как вызов».
+				</p>
+				<div>
+					<img src="https://media.giphy.com/media/zfmnv3CN2YLle/giphy.gif" alt="">
+				</div>
+			</article>
+		</section>
+
+
+		<section id="sec_3">
+			<header><h2>Успеваем все и везде</h2></header>
+			<article>
+				<h3>Ставь цели</h3>
+				<p>
+					Зачем тебе нужен тайм-менеджмент? Цель – твой двигатель. Получить золотую медаль, поступить на бюджет или похудеть – долговременные цели. Цель – мощный мотиватор, который побудит в тебе желание планировать свое время. Чтобы добиться долговременной цели, тебе необходимо продумывать каждый шаг и ежедневно ставить маленькие кратковременные цели. Они, как ступеньки, которые, в конце концов, приведут тебя к тому, ради чего ты так старалась. 
+				</p>
+				<div>
+					<img src="https://media.giphy.com/media/lbzZ8GBUYubbq/giphy.gif" alt="">
+				</div>
+			</article>
+			<article>
+				<h3>Не работай в режиме нон-стоп</h3>
+				<p>
+					Нам всем нужен отдых, перерывы, которые помогут упорядочить мысли и вернуться к делу с новыми силами. Если речь идет о ежедневных задачах, то здесь отлично действует «метод помидора», названный в честь кухонного таймера в виде помидора. Поставь таймер на 25 минут и, не отвлекаясь ни на что, выполняй поставленную задачу. Звоночек! Пора делать перерыв на 3–5 минут и после вновь возвращаться к работе. После каждого 4-го звоночка делай длинный перерыв – от 15 до 30 минут. Этот метод отлично действует, если ты пишешь большое сочинение или готовишься к экзамену. 
+				</p>
+				<div>
+					<img src="https://media.giphy.com/media/4SsqeQj2pCyHK/giphy.gif" alt="">
+				</div>
+			</article>
+		</section>
+		<hr align="center" color="#C2C7C8">
+	</main>
+
+
+	<footer>
+		<p>
+			Автор: Елизавета Кочергина
+			<br>
+			Источник: <cite>ellegirl.ru</cite>
+		</p>
+	</footer>
+
+
+	<script>
+		hide.addEventListener('click',function() {
+			menu.classList.toggle('vis');
+		});
+	</script>
+</body>
+</html>
