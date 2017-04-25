@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Галерея</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Playfair+Display');
+		@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+		header{
+			text-align: center;
+			padding: 5px;
+			margin: 15px auto;
+			background: #FFDFCE;
+		}
+		main{
+			text-align: center;
+			padding: 5px;
+			margin: 15px auto;
+		}
+		footer{
+			text-align: center;
+			padding: 5px;
+			margin: 15px auto;
+			background: #FFDFCE;
+		}
+		div{
+			padding: 5px;
+			margin: 20px;
+			display: inline-block;
+			border: 1.5px #7F807F solid;
+			transition: 1.5s;
+		}
+		h1{
+			font-family: 'Playfair Display', serif;
+		}
+		p{
+			font-family: 'Fira Sans', sans-serif;
+		}
+		.p1{
+			margin-left: 140px;
+			margin-right: 140px;
+		}
+		.p1::after{
+			content:"";
+			display:block;
+			margin: 2px auto;
+			height:1.5px;
+			background-color:#7F807F;
+			width:500px;
+			transition:all 1s;
+		}
+		.p1:hover::after{
+			width:800px;
+		}
+		.p2::before{
+			content:"";
+			display:block;
+			margin: 2px auto;
+			height:1.5px;
+			background-color:#7F807F;
+			width:500px;
+			transition:all 1s;
+		}
+		.p2:hover::before{
+			width:800px;
+		}
+		.pic1:hover{
+			transform: scale(1.25);
+		}
+		.pic2:hover{
+			transform: rotate(15deg);
+		}
+		.pic3:hover{
+			transform: rotate(-15deg);
+		}
+		.pic4:hover{
+			transform: translate(0,-40px);
+		}
+		.pic5:hover{
+			transform: translate(0,40px);
+		}
+		.pic6:hover{
+			transform: skew(10deg); 
+		}
+		.pic7:hover{
+			transform: skew(-10deg); 
+		}
+
+		.sec1{
+			font-family: 'Marck Script', cursive;
+			font-size: 1.5rem;
+			display: inline-block;
+			margin: 0.5px 25px;
+			width: 400px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Выставка Винсента Ван Гога</h1>
+		<p class="p1">
+			Эта фамилия знакома каждому школьнику. Еще в детстве мы шутили между собой «рисуешь как Ван Гог»! или «ну ты Пикассо!». Ведь бессмертен лишь тот, чье имя навсегда останется в истории не только живописи и мирового искусства, но и человечества.
+		</p>
+	</header>
+
+
+	<main>
+		<div class="pic1">
+			<img src="http://vangogen.ru/wp-content/uploads/2014/06/491.jpg" width="400" height="300" alt="Звездная ночь">
+		</div>
+		<div class="pic1">
+			<img src="http://vangogen.ru/wp-content/uploads/2014/06/2491.jpg" width="400" height="300" alt="Мост через Сену в Аньере">
+		</div>
+		<div class="pic1">
+			<img src="http://vangogen.ru/wp-content/uploads/2014/05/104.jpg" width="400" height="300" alt="Дом священника в Нейнене">
+		</div>
+
+		<section>
+			<p class="sec1">"Звездная ночь"</p>
+			<p class="sec1">"Мост через Сену в Аньере"</p>
+			<p class="sec1">"Дом священника в Нейнене"</p>
+		</section>
+
+		<div class="pic2">
+			<img src="http://vangogen.ru/wp-content/uploads/2014/06/478.jpg" width="400" height="300" alt="Ирисы">
+		</div>
+		<div class="pic3">
+			<img src="http://vangogen.ru/wp-content/uploads/2014/06/658.jpg" width="400" height="300" alt="Цветущий миндаль">
+		</div>
+
+
+
+		<section>
+			<p class="sec1">"Ирисы"</p>
+			<p class="sec1">"Цветущий миндаль"</p>
+		</section>
+
+
+
+		<div class="pic4">
+			<img src="http://vangogen.ru/wp-content/uploads/2014/06/4211.jpg" width="400" height="300" alt="Красные виноградники в Арле">
+		</div>
+		<div class="pic5">
+			<img src="http://vangogen.ru/wp-content/uploads/2014/05/102.jpg" width="400" height="300" alt="Осенний пейзаж">
+		</div>
+		<div class="pic4">
+			<img src="http://vangogen.ru/wp-content/uploads/2014/06/569.jpg" width="400" height="300" alt="Пшеничное поле с кипарисами">
+		</div>
+
+
+
+		<section>
+			<p class="sec1">"Красные виноградники в Арле"</p>
+			<p class="sec1">"Осенний пейзаж"</p>
+			<p class="sec1">"Пшеничное поле с кипарисами"</p>
+		</section>
+
+
+
+		<div class="pic6">
+			<img src="http://vangogen.ru/wp-content/uploads/2014/06/552.jpg" width="400" height="300" alt="Поля">
+		</div>
+		<div class="pic7">
+			<img src="http://vangogen.ru/wp-content/uploads/2014/05/1681.jpg" width="400" height="300" alt="Вид с Монмартра">
+		</div>
+
+
+		<section>
+			<p class="sec1">"Поля"</p>
+			<p class="sec1">"Вид с Монмартра"</p>
+		</section>
+	</main>
+	
+
+	<footer>
+		<p class="p2">
+			Автор: Елизавета Кочергина
+			<br>
+			Источник: <cite>gallerix.ru</cite>, <cite>vangogen.ru</cite>
+		</p>
+	</footer>
+</body>
+</html>
